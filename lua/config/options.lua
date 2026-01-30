@@ -15,6 +15,8 @@ vim.opt.undofile = true
 vim.opt.smartcase = true
 vim.wo.signcolumn = 'yes'
 
+vim.opt.splitkeep = 'screen'
+vim.opt.winborder = 'single'
 vim.opt.termguicolors = true
 vim.opt.wrap = false
 vim.opt.cursorline = true
