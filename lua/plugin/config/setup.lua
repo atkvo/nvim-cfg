@@ -1,6 +1,7 @@
 require('plugin/config/mini')
 
 require('gitsigns').setup()
+require('guess-indent').setup()
 
 require('arrow').setup({
   show_icons = true,
