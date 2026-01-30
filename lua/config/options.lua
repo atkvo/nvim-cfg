@@ -1,24 +1,36 @@
-vim.o.hlsearch = false
-vim.o.incsearch = true
+vim.opt.hlsearch = false
+vim.opt.incsearch = true
 
 vim.wo.number = true
-vim.o.number = true
+vim.opt.number = true
 
-vim.o.mouse = 'a'
+vim.opt.mouse = 'a'
 
-vim.o.breakindent = true
-vim.o.smartindent = true
+vim.opt.breakindent = true
+vim.opt.smartindent = true
+vim.opt.smarttab = true
 
-vim.o.undofile = true
+vim.opt.undofile = true
 
-vim.o.smartcase = true
+vim.opt.smartcase = true
 vim.wo.signcolumn = 'yes'
 
-vim.o.termguicolors = true
-vim.o.wrap = false
-vim.o.cursorline = true
+vim.opt.termguicolors = true
+vim.opt.wrap = false
+vim.opt.cursorline = true
 
-vim.o.cmdheight = 0
+vim.opt.list = true
+vim.opt.listchars = {
+    tab = '→ ',
+    trail = '·',
+    extends = '▶',
+    precedes = '◀',
+    nbsp = '⏑',
+    multispace = '·', -- Optional: for 2+ consecutive spaces
+}
+
+
+vim.opt.cmdheight = 0
 vim.cmd.colorscheme('miniwinter')
 
 if vim.version().minor >= 12 then
