@@ -20,7 +20,7 @@ map.set('n', '<leader>S', '<Cmd>Pick lsp scope="workspace_symbol_live"<CR>', { d
 map.set('n', '<leader>ee', '<Cmd>lua MiniFiles.open(vim.api.nvim_buf_get_name(0), false)<CR>', { desc = 'File directory' })
 map.set('n', '<leader>eE', '<Cmd>lua MiniFiles.open(nil, false)<CR>', { desc = 'Directory' })
 map.set('n', '<leader>/G', '<Cmd>Pick grep_live<CR>', { desc = 'Search workspace' })
-map.set('n', '<leader>/g', '<Cmd>Pick buf_lines<CR>', { desc = 'Search buffer' })
+map.set('n', '<leader>/g', '<Cmd>Pick buf_lines scope="current"<CR>', { desc = 'Search buffer' })
 map.set('n', '<leader>/h', '<Cmd>Pick git_hunks<CR>', { desc = 'Search hunks' })
 map.set('n', '<leader>/c', '<Cmd>Pick git_commits<CR>', { desc = 'Search commits' })
 
