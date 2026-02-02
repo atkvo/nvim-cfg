@@ -31,6 +31,7 @@ vim.opt.listchars = {
     multispace = '·', -- Optional: for 2+ consecutive spaces
 }
 
+vim.opt.scrollbind = false
 
 vim.opt.cmdheight = 0
 vim.cmd.colorscheme('miniwinter')
