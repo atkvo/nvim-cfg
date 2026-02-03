@@ -8,4 +8,14 @@ vim.pack.add({
   { src = 'https://github.com/NMAC427/guess-indent.nvim' },
 })
 
-require('plugin/config/setup')
+require('plugins/mini')
+require('plugins/treesitter')
+
+require('gitsigns').setup()
+require('guess-indent').setup()
+require('arrow').setup({
+  show_icons = true,
+  leader_key = ';',
+  buffer_leader_key = '<A-m>',
+})
+

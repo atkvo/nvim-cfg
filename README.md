@@ -13,6 +13,15 @@ git clone git@github.com:atkvo/nvim-cfg.git $HOME/.config/nvim
 
 ## notes
 
+### structure
+
+```
+init.lua    # entrypoint
+config/     # config files. no hard dependencies on plugins (keymaps exempt)
+plugins/    # anything plugin related
+  init.lua  # plugin configuration entrypoint
+```
+
 ### lsp server enable override
 
 > see `lsp/config/lsp.lua` for override logic
