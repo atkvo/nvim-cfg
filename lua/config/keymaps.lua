@@ -8,6 +8,12 @@ map.set('n', '<C-j>', '<C-w>j', { silent = true })
 map.set('n', '<C-h>', '<C-w>h', { silent = true })
 map.set('n', '<C-l>', '<C-w>l', { silent = true })
 
+-- Resize splits using Alt + hjkl
+map.set('n', '<A-h>', ':vertical resize -2<CR>', { silent = true })
+map.set('n', '<A-l>', ':vertical resize +2<CR>', { silent = true })
+map.set('n', '<A-j>', ':resize -2<CR>', { silent = true })
+map.set('n', '<A-k>', ':resize +2<CR>', { silent = true })
+
 map.set('n', '<leader>\'', '<Cmd>Pick resume<CR>', { desc = 'Pick resume' })
 map.set('n', '<leader>f', '<Cmd>Pick files<CR>', { desc = 'Pick files' })
 map.set('n', '<leader>b', '<Cmd>Pick buffers<CR>', { desc = 'Pick buffers' })
